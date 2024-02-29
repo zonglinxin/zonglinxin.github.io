@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宗林欣的转变：从游戏到信息技术的启蒙之旅</title>
+<style>
+  body {
+    font-family: '仿宋', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .wrapper {
+    background: url("4.jpg");/*背景*/
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  .scene {
+    display: none;
+  }
+
+  .scene.active {
+    display: block;
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .scene img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border-radius: 4px;
+    transition:all 1s;
+  }
+  .scene p{
+    text-align: left;
+    font-size: 20px;
+  }
+  .scene img:hover{
+    transform:scale(1.5)rotate(10deg) }
+  button {
+    background: #5c84f1;
+    color: white;
+    padding: 10px 20px;
+    margin: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<audio autoplay="autoplay" 
+controls="controls"
+loop="loop">
+<source type="audio/mpeg" 
+src="歌.mp3"></source>
+</audio>
+
+<div class="wrapper">
+  <h1>宗林欣的信息技术提升之路</h1>
+  <div class="scene active" id="scene-1">
+    <p>宗林欣坐在昏暗的房间里，眼睛紧盯着电脑屏幕。他的手指快速地敲击着键盘，控制着角色在虚拟世界中战斗。周围散落着空饮料瓶和零食袋，他完全沉浸在游戏的世界里。</p>
+    <div>
+      <img src="玩游戏.png"/>
+    </div>
+    <button onclick="switchScene(2)">遇见季虬</button>
+  </div>
+
+  <div class="scene" id="scene-2">
+    <p>季虬，在聊天群里这个名字熠熠生辉。宗林欣悄悄逃离了教室，白板上的解题仿佛在嘲笑他。但他只在意手机里那个亮眼的电子头像。他们是游戏中的最好玩伴，在互相的配合下，他们战无不胜</p>
+    <div>
+      <img src="光遇同伴.jpg"/>
+    </div>
+    <button onclick="switchScene(3)">季虬的邀请</button>
+  </div>
+
+  <div class="scene" id="scene-3">
+    <p>经过一段时间的聊天，季虬邀请宗林欣去他们所在的城市参加游戏活动，两人在现实中第一次见面，聊的非常投机。</p>
+    <div>
+      <img src="线下活动.png"/>
+    </div>
+    <button onclick="switchScene(4)">参观信息科技公司</button>
+  </div>
+
+   <div class="scene" id="scene-4">
+    <p>活动结束后，季虬邀请宗林欣去他的信息技术公司参观，并畅谈着游戏和信息技术的奇妙之处，劝说宗林欣去了解信息技术</p>
+    <div>
+      <img src="789.png"/>
+    </div>
+    <button onclick="switchScene(5)">尝试</button>
+  </div>
+
+ <div class="scene" id="scene-5">
+    <p>宗林欣接触信息技术之后，发现了信息技术的有趣之处，并决定开始学习。</p>
+    <div>
+      <img src="253.png"/>
+    </div>
+    <button onclick="switchScene(6)">学习编程</button>
+  </div>
+
+ <div class="scene" id="scene-6">
+    <p>宗林欣开始学习编程知识，他在电脑前不停地敲击键盘，学习编写简单的代码，发现了编程的乐趣和挑战。</p>
+     <div>
+      <img src="8.png"/>
+    </div>
+    <button onclick="switchScene(7)">展示才华</button>
+  </div>
+
+ <div class="scene" id="scene-7">
+    <p>宗林欣在一次学校的信息技术大赛中展示了他的编程才华，通过设计出色的程序，他赢得了所有人的赞赏。</p>
+     <div>
+      <img src="获奖.png"/>
+    </div>
+    <button onclick="switchScene(8)">着手培养</button>
+  </div>
+ <div class="scene" id="scene-8">
+    <p>季虬发觉了宗林欣的天赋，觉得他是一个不可多得的天才，开始培养宗林欣，想让他成为一个知识分子。</p>
+    <div>
+      <img src="963.png"/>
+    </div>
+    <button onclick="switchScene(9)">奋发图强</button>
+  </div>
+
+  <div class="scene" id="scene-9">
+    <p>宗林欣以自身最大的努力去学习信息技术，把喜欢玩游戏的劲头用到了学习上</p>
+    <div>
+      <img src="12.png"/>
+    </div>
+    <button onclick="switchScene(10)">第一次的成功</button>
+  </div>
+
+  <div class="scene" id="scene-10">
+    <p>宗林欣的成就得到了广泛的认可，他被邀请参加各种科技论坛和演讲，成为信息界的新星</p>
+    <div>
+      <img src="成为.png"/>
+    </div>
+    <button onclick="switchScene(11)">功成名就</button>
+  </div>
+
+  <div class="scene" id="scene-11">
+    <p>宗林欣开始回馈社区，通过开设编程课程和分享自己的经验，他鼓励更多的年轻人参与信息技术的学习和创新。</p>
+    <div>
+      <img src="教学.png"/>
+    </div>
+    <button onclick="switchScene(1)">重新开始</button>
+  </div>
+</div>
+
+<script>
+  function switchScene(sceneNumber) {
+    const scenes = document.querySelectorAll('.scene');
+    scenes.forEach(scene => {
+      scene.classList.remove('active');
+    });
+    const nextScene = document.getElementById('scene-' + sceneNumber);
+    nextScene.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
